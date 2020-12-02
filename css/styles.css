@@ -1081,18 +1081,19 @@ hr {
 }
 
 .burger-pressed .burger-item {
-  background: none;
+  transform: translateX(-20px);
+  background: transparent;
 }
 
 .burger-pressed .burger-item::before {
   top: 0;
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(14px, -14px);
 
 }
 
 .burger-pressed .burger-item::after {
   top: 0;
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(14px, 14px);
 }
 
 /* ======= Media ======= */
